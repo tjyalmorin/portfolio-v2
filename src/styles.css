@@ -404,3 +404,55 @@ nav a:hover {
         font-size: 1rem;
     }
 }
+
+/* Scroll Animation */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Stagger animation for children */
+.stagger-children > * {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.stagger-children.is-visible > *:nth-child(1) {
+    transition-delay: 0.1s;
+}
+
+.stagger-children.is-visible > *:nth-child(2) {
+    transition-delay: 0.2s;
+}
+
+.stagger-children.is-visible > *:nth-child(3) {
+    transition-delay: 0.3s;
+}
+
+.stagger-children.is-visible > *:nth-child(4) {
+    transition-delay: 0.4s;
+}
+
+.stagger-children.is-visible > *:nth-child(5) {
+    transition-delay: 0.5s;
+}
+
+.stagger-children.is-visible > *:nth-child(6) {
+    transition-delay: 0.6s;
+}
+
+.stagger-children.is-visible > *:nth-child(7) {
+    transition-delay: 0.7s;
+}
+
+.stagger-children.is-visible > * {
+    opacity: 1;
+    transform: translateY(0);
+}
