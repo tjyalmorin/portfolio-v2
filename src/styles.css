@@ -315,6 +315,8 @@ nav a:hover {
     transition: all 0.3s;
     display: flex;
     flex-direction: column;
+    text-decoration: none;
+    color: inherit;
 }
 
 .project-card:hover {
@@ -399,6 +401,20 @@ nav a:hover {
     .project-image {
         height: 300px;
     }
+}
+
+.footer {
+    padding: 4rem 5%;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    background: #0c0c0c;
+}
+
+.footer p {
+    color: #666666;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    font-weight: 300;
 }
 
 @media (max-width: 968px) {
