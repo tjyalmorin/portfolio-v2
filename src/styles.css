@@ -189,12 +189,6 @@ nav a:hover {
     padding: 2.5rem;
     margin-bottom: 2rem;
     border-radius: 12px;
-    transition: all 0.3s;
-}
-
-.education-item:hover {
-    background: rgba(255, 255, 255, 0.04);
-    border-color: rgba(255, 255, 255, 0.1);
 }
 
 .education-year {
